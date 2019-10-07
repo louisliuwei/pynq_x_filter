@@ -1,0 +1,1113 @@
+INFO-FLOW: Workspace C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1 opened at Mon Oct 07 01:59:06 +0800 2019
+Execute     set_part xc7z020clg400-1 -tool vivado 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute           config_chip_info -quiet -speed medium 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source done; 0.124 sec.
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.127 sec.
+Command         ap_source done; 0.128 sec.
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.185 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Command     set_part done; 0.255 sec.
+Execute     create_clock -period 10 -name default 
+Execute       config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_dataflow -default_channel fifo -fifo_depth 0 -scalar_fifo_depth 0 -start_fifo_depth 0 -strict_mode warning 
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 0.
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+Execute     csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/fir_test.cpp 
+Execute       is_xip C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/fir_test.cpp 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/input.dat 
+Execute       is_xip C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/input.dat 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/out.gold.dat 
+Execute       is_xip C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/out.gold.dat 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/x_order_fir.cpp 
+Execute       is_xip C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/x_order_fir.cpp 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/fir_coef.dat 
+Execute       is_xip C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/fir_coef.dat 
+Execute       get_default_platform 
+Execute       source run_sim.tcl 
+Command       ap_source done; 0.503 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 6.604 sec.
+Execute     csynth_design 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -lm 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       config_compile -blackbox  
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute         get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute         get_config_schedule -suppress_dependence_error_break 
+WARNING: [HLS 200-40] Skipped source file 'fir_coef.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'fir_src/x_order_fir.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         is_m_axi_addr64 
+INFO-FLOW: Handling fir_src/x_order_fir.cpp as C++
+Execute         get_default_platform 
+Execute         is_encrypted fir_src/x_order_fir.cpp 
+Execute         get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "fir_src/x_order_fir.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E fir_src/x_order_fir.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp
+Command         clang done; 0.863 sec.
+Execute         tidy_31 xilinx-xfmat-array-geometry C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command         tidy_31 done; 0.421 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute         clang -syntaxcheck -src C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp"  -o "C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/useless.bc
+Command         clang done; 1.05 sec.
+INFO-FLOW: Done: GCC PP time: 2.3 seconds per iteration
+Execute         list_core -type functional_unit 
+Execute         tidy_31 xilinx-systemc-detector C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp std=gnu++98 -directive=C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command         tidy_31 done; 0.378 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute         tidy_31 xilinx-directive2pragma C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp std=gnu++98 -directive=C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command         tidy_31 done; 0.386 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/xilinx-dataflow-lawyer.x_order_fir.pp.0.cpp.diag.yml C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/xilinx-dataflow-lawyer.x_order_fir.pp.0.cpp.out.log 2> C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/xilinx-dataflow-lawyer.x_order_fir.pp.0.cpp.err.log 
+Command         ap_eval done; 0.359 sec.
+Execute         tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp std=gnu++98 
+Execute           ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/tidy-3.1.x_order_fir.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/tidy-3.1.x_order_fir.pp.0.cpp.out.log 2> C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/tidy-3.1.x_order_fir.pp.0.cpp.err.log 
+Command           ap_eval done; 0.436 sec.
+Execute           ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/xilinx-legacy-rewriter.x_order_fir.pp.0.cpp.out.log 2> C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/xilinx-legacy-rewriter.x_order_fir.pp.0.cpp.err.log 
+Command           ap_eval done; 0.363 sec.
+Command         tidy_31 done; 0.81 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.6 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute         tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command         tidy_31 done; 0.844 sec.
+Execute         get_default_platform 
+INFO-FLOW: Processing labels
+Execute         clang -src C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.bc
+Command         clang done; 1.121 sec.
+INFO-FLOW: Linking Debug ...
+Execute         llvm-ld C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.g.bc -hls-opt -except-internalize x_order_fir -LC:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g 
+Command         llvm-ld done; 0.881 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 104.422 ; gain = 20.520
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 104.422 ; gain = 20.520
+Execute         get_config_sdx -target 
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute           transform -promote-dbg-pointer C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.pp.bc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute           llvm-ld C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.0 
+Command           llvm-ld done; 0.415 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top x_order_fir -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.0.bc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 106.059 ; gain = 22.156
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.1.bc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 106.602 ; gain = 22.699
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.g.1.bc to C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.o.1.bc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'x.data' (fir_src/x_order_fir.cpp:21).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'y.data' (fir_src/x_order_fir.cpp:20).
+INFO: [XFORM 203-102] Automatically partitioning small array 'fir_ctrl' (fir_src/x_order_fir.cpp:33) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'fir_ctrl' (fir_src/x_order_fir.cpp:33) in dimension 1 completely.
+Command           transform done; 0.124 sec.
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 127.410 ; gain = 43.508
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.o.2.bc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [HLS 200-466] Port 'ctrl'() has different latency/depth on the same m_axi bundle:'gmem'
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 2 on port 'gmem' (fir_src/x_order_fir.cpp:43:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (fir_src/x_order_fir.cpp:48:3). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+Command           transform done; 0.158 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 127.445 ; gain = 43.543
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 0.917 sec.
+Command       elaborate done; 8.436 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'x_order_fir' ...
+Execute         ap_set_top_model x_order_fir 
+Execute         get_model_list x_order_fir -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model x_order_fir 
+Execute         get_model_list x_order_fir -filter all-wo-channel 
+INFO-FLOW: Model list for configure: x_order_fir
+INFO-FLOW: Configuring Module : x_order_fir ...
+Execute         set_default_model x_order_fir 
+Execute         apply_spec_resource_limit x_order_fir 
+INFO-FLOW: Model list for preprocess: x_order_fir
+INFO-FLOW: Preprocessing Module: x_order_fir ...
+Execute         set_default_model x_order_fir 
+Execute         cdfg_preprocess -model x_order_fir 
+Execute         rtl_gen_preprocess x_order_fir 
+INFO-FLOW: Model list for synthesis: x_order_fir
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'x_order_fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model x_order_fir 
+Execute         schedule -model x_order_fir 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.fir_ctrl.ctrl'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.x_order_fir(data_t*, data_t*, int*, int*)::coef.coe'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'calc_loop'.
+WARNING: [SCHED 204-68] The II Violation in module 'x_order_fir': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation (fir_src/x_order_fir.cpp:56) of variable 'shift_reg_load', fir_src/x_order_fir.cpp:55 on array 'shift_reg' and 'load' operation ('shift_reg_load', fir_src/x_order_fir.cpp:55) on array 'shift_reg'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.026 seconds; current allocated memory: 79.209 MB.
+Execute         report -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.verbose.sched.rpt -verbose -f 
+Execute         db_write -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.sched.adb -f 
+INFO-FLOW: Finish scheduling x_order_fir.
+Execute         set_default_model x_order_fir 
+Execute         bind -model x_order_fir 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=x_order_fir
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.156 seconds; current allocated memory: 79.659 MB.
+Execute         report -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.verbose.bind.rpt -verbose -f 
+Execute         db_write -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.bind.adb -f 
+INFO-FLOW: Finish binding x_order_fir.
+Execute         get_model_list x_order_fir -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess x_order_fir 
+INFO-FLOW: Model list for RTL generation: x_order_fir
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'x_order_fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -prefix 
+Execute         get_config_rtl -auto_prefix 
+Execute         create_rtl_model x_order_fir -vendor xilinx -mg_file C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/y_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/y_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/y_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/x_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/x_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/x_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/coe' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'x_order_fir/ctrl' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'x_order_fir' to 's_axilite & ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'x_order_fir_shift_reg' to 'x_order_fir_shiftbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Bundling port 'return', 'coe' and 'ctrl' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'x_order_fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.184 seconds; current allocated memory: 81.174 MB.
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute         gen_rtl x_order_fir -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/syn/systemc/x_order_fir -synmodules x_order_fir 
+Execute         gen_rtl x_order_fir -istop -style xilinx -f -lang vhdl -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/syn/vhdl/x_order_fir 
+Execute         gen_rtl x_order_fir -istop -style xilinx -f -lang vlog -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/syn/verilog/x_order_fir 
+Execute         export_constraint_db -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl -f -tool general 
+Execute         report -model x_order_fir -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.design.xml -verbose -f -dv 
+Execute         report -model x_order_fir -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.sdaccel.xml -verbose -f -sdaccel 
+Execute         gen_tb_info x_order_fir -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir -p C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db 
+Execute         report -model x_order_fir -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/syn/report/x_order_fir_csynth.rpt -f 
+Execute         report -model x_order_fir -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/syn/report/x_order_fir_csynth.xml -f -x 
+Execute         report -model x_order_fir -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.verbose.rpt -verbose -f 
+Execute         db_write -model x_order_fir -o C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.adb -f 
+Execute         sc_get_clocks x_order_fir 
+Execute         get_config_export -vivado_clock 
+Execute         sc_get_portdomain x_order_fir 
+INFO-FLOW: Model list for RTL component generation: x_order_fir
+INFO-FLOW: Handling components in module [x_order_fir] ... 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO-FLOW: Found component x_order_fir_coef.
+INFO-FLOW: Append model x_order_fir_coef
+INFO-FLOW: Found component x_order_fir_AXILiteS_s_axi.
+INFO-FLOW: Append model x_order_fir_AXILiteS_s_axi
+INFO-FLOW: Found component x_order_fir_gmem_m_axi.
+INFO-FLOW: Append model x_order_fir_gmem_m_axi
+INFO-FLOW: Append model x_order_fir
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: x_order_fir_coef x_order_fir_AXILiteS_s_axi x_order_fir_gmem_m_axi x_order_fir
+INFO-FLOW: To file: write model x_order_fir_coef
+INFO-FLOW: To file: write model x_order_fir_AXILiteS_s_axi
+INFO-FLOW: To file: write model x_order_fir_gmem_m_axi
+INFO-FLOW: To file: write model x_order_fir
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source done; 0.13 sec.
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.133 sec.
+Command         ap_source done; 0.134 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'x_order_fir_coef_ram (RAM)' using block RAMs with power-on initialization.
+Execute           source ./AXILiteS.slave.tcl 
+Execute           is_m_axi_addr64 
+Command         ap_source done; 0.221 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source done; 0.118 sec.
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.122 sec.
+Command         ap_source done; 0.122 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=x_order_fir xml_exists=0
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=12
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=9
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=4 #gSsdmPorts=12
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_sdx -target 
+Execute         get_config_export -xo 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute         sc_get_clocks x_order_fir 
+Execute         source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_sdx -target 
+Execute         get_config_sdx -profile 
+Execute         ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 134.211 ; gain = 50.309
+INFO: [SYSC 207-301] Generating SystemC RTL for x_order_fir.
+INFO: [VHDL 208-304] Generating VHDL RTL for x_order_fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for x_order_fir.
+Command       autosyn done; 2.997 sec.
+Execute       get_part 
+Execute       get_config_export -sdx_tcl 
+Command     csynth_design done; 11.496 sec.
+Execute     cosim_design 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.121 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.124 sec.
+Command       ap_source done; 0.124 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/fir_test.cpp 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/input.dat 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/out.gold.dat 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/x_order_fir.cpp 
+Execute       is_encrypted C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/fir_coef.dat 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute       get_default_platform 
+INFO-FLOW: TB processing: C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/fir_test.cpp C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp
+Execute       tidy_31 xilinx-tb-xfmat C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.749 sec.
+INFO-FLOW: Marker-Pragma convertor: C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp.tb.cpp.line C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute       get_default_platform 
+INFO-FLOW: TB processing: C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/fir_src/x_order_fir.cpp C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/x_order_fir.cpp_pre.cpp
+Execute       tidy_31 xilinx-tb-xfmat C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/x_order_fir.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/x_order_fir.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.718 sec.
+INFO-FLOW: Marker-Pragma convertor: C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/x_order_fir.cpp_pre.cpp C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/x_order_fir.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/x_order_fir.cpp_pre.cpp.tb.cpp.line C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/x_order_fir.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+WARNING: [COSIM 212-369] AXI_master port 'coe' has a depth of '1024'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'ctrl' has a depth of '256'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-75] Fifo port 'y_data' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.
+WARNING: [COSIM 212-75] Fifo port 'y_user_V' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.
+WARNING: [COSIM 212-75] Fifo port 'y_last_V' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.
+WARNING: [COSIM 212-75] Fifo port 'x_data' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.
+WARNING: [COSIM 212-75] Fifo port 'x_user_V' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.
+WARNING: [COSIM 212-75] Fifo port 'x_last_V' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.
+Execute       get_default_platform 
+Execute       source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command       ap_source done; 4.201 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute       get_default_platform 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source ../tv/cdatafile/ref.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source ../tv/cdatafile/ref.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source .run_sim.tcl 
+Execute         source check_sim.tcl 
+Execute         source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command       ap_source done; 17.384 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command     cosim_design done; 62.65 sec.
+Execute     export_design -rtl verilog -format ip_catalog 
+Execute       get_config_export -acc 
+Execute       get_config_export -clock_margin 
+Execute       get_config_export -custom_script 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -driver_input_dir 
+Execute       get_config_export -ipname 
+Execute       get_config_export -kernel_drc 
+Execute       get_config_export -library 
+Execute       get_config_export -qor_test 
+Execute       get_config_export -sdaccel 
+Execute       get_config_export -sim 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -use_ip 
+Execute       get_config_export -use_netlist 
+Execute       get_config_export -vendor 
+Execute       get_config_export -version 
+Execute       get_config_export -xo 
+Execute       config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -vivado_clock 
+Execute       get_top 
+Execute       get_config_sdx -target 
+Execute       get_config_rtl -auto_prefix 
+Execute       get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.126 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.131 sec.
+Command       ap_source done; 0.131 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.123 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.126 sec.
+Command       ap_source done; 0.127 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=12
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=12
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=x_order_fir
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=x_order_fir
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.102 sec.
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.157 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.161 sec.
+Command       ap_source done; 0.161 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/impl/ip/pack.bat
+Command     export_design done; 10.174 sec.
+Command   ap_source done; 91.311 sec.
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/aes/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/blowfish/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/des/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/rc4/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcl8.5/http1.0/pkgIndex.tcl 
+Execute   source C:/Xilinx/Vivado/2018.3/tps/tcl/tcl8.5/opt0.4/pkgIndex.tcl 
+INFO-FLOW: Workspace C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1 opened at Mon Oct 07 09:14:45 +0800 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.182 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.186 sec.
+Command     ap_source done; 0.186 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_dataflow -default_channel=fifo 
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+Execute     config_dataflow -fifo_depth=0 
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 0.
+Execute     config_dataflow -scalar_fifo_depth=0 
+Execute     config_dataflow -start_fifo_depth=0 
+Execute     config_dataflow -strict_mode=warning 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.452 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.146 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.149 sec.
+Command     ap_source done; 0.15 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.125 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.128 sec.
+Command     ap_source done; 0.129 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=x_order_fir xml_exists=1
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.compgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=12
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=12
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=x_order_fir
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=x_order_fir
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.constraint.tcl 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/x_order_fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.15 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.284 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.289 sec.
+Command     ap_source done; 0.29 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec C:/Users/weli/Documents/Works/Materials/Training_Materials_WeiLiu/pynq_x-order_fir/ip/hls/x-order_filter/solution1/impl/ip/pack.bat
+Command   export_design done; 20.991 sec.
+Command ap_source done; 21.458 sec.
+Execute cleanup_all 

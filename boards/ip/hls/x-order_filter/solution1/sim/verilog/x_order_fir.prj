@@ -1,0 +1,12 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_axi_master_gmem.v"
+sv xil_defaultlib "AESL_axi_slave_AXILiteS.v"
+sv xil_defaultlib "AESL_axi_s_x.v"
+sv xil_defaultlib "AESL_axi_s_y.v"
+sv xil_defaultlib "AESL_fifo.v"
+sv xil_defaultlib "x_order_fir.autotb.v"
+sv xil_defaultlib "x_order_fir.v"
+sv xil_defaultlib "x_order_fir_AXILiteS_s_axi.v"
+sv xil_defaultlib "x_order_fir_coef.v"
+sv xil_defaultlib "x_order_fir_gmem_m_axi.v"
+
