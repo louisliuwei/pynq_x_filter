@@ -1,6 +1,6 @@
 ## PYNQ-x_filter
 
-This repository contains a "X order FIR filter" (up to 1023 orders and both order and coefficients are configurable) introduction application to the Xilinx PYNQ framework and also the HLS source codes. 
+This repository contains a "X order FIR filter" (up to 1023 orders, both order and coefficients are configurable) introduction application to the Xilinx PYNQ framework and also the HLS source codes. 
 
 You can go through the hls source code to experience the below hls directives.
 
