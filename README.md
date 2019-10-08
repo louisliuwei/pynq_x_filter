@@ -1,20 +1,20 @@
 ## PYNQ-x_filter
 
-This repository contains a "X order fir filter" introduction application to the Xilinx PYNQ framework and also the HLS source codes. 
+This repository contains a "X order FIR filter" (up to 1023 orders and both order and coefficients are configurable) introduction application to the Xilinx PYNQ framework and also the HLS source codes. 
 
 You can go through the hls source code to experience the below hls directives.
 
-*m_axi*
+* m_axi
 
-*axis*
+* axis
 
-*s_axilite*
+* s_axilite
 
-*PIPELINE*
+* PIPELINE
 
-*LOOP_TRIPCOUNT*
+* LOOP_TRIPCOUNT
 
-The design illustrates how to run the X order fir IP to filter the signal on the FPGA and also illustrates the numpy , matplotlib and fftpack packages. 
+The design illustrates how to run the X order FIR IP base on PYNQ framework to filter the signal on the FPGA and also illustrates the numpy , matplotlib and fftpack packages. 
 
 The below is the Vivado block design diagram.
 
