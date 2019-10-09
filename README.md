@@ -41,4 +41,4 @@ Currently this repository is compatible with [PYNQ image v2.4](http://www.pynq.i
 
 ## Note
 
-Only PYNQ-Z2 is supported by now. Migration to other boards are welcomed.
+Only PYNQ-Z2 is supported by now. Migration to other boards is welcomed.
