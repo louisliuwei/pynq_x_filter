@@ -36,7 +36,7 @@ import shutil
 board = os.environ['BOARD']
 repo_board_folder = f'boards/{board}/x-filter'
 board_notebooks_dir = os.environ['PYNQ_JUPYTER_NOTEBOOKS']
-hw_data_files = []
+hw_data_files = ['*.bit','*.tcl','*.hwh','*.so','*.bin','*.txt', '*.cpp', '*.h', '*.sh']
 
 
 # check whether board is supported
