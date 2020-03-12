@@ -50,7 +50,6 @@ def check_env():
 # copy overlays to python package
 def copy_overlays():
     src_ol_dir = os.path.join(repo_board_folder, 'bitstream')
-	
 	if os.path.isdir(os.path.join('/usr/local/lib',os.environ['PYNQ_PYTHON'],'dist-packages/pynq/overlays/x-filter')):
 		shutil.rmtree(os.path.join('/usr/local/lib', os.environ['PYNQ_PYTHON'], 'dist-packages/pynq/overlays/x-filter'))
 	shutil.copytree(src_ol_dir, os.path.join('/usr/local/lib', os.environ['PYNQ_PYTHON'], 'dist-packages/pynq/overlays/x-filter')) #copy overlay
