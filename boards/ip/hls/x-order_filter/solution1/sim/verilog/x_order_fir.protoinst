@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"x_order_fir": {
-			"proto_instances": {
-			}
-		}
-	}
-}

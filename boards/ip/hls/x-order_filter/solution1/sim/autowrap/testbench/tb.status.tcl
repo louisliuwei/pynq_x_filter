@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName x_order_fir.cpp_pre.cpp.tb.cpp

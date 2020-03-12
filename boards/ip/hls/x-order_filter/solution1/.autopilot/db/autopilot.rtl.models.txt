@@ -1,4 +1,0 @@
-x_order_fir_coef
-x_order_fir_AXILiteS_s_axi
-x_order_fir_gmem_m_axi
-x_order_fir
