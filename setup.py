@@ -50,9 +50,13 @@ def check_env():
 # copy overlays to python package
 def copy_overlays():
     src_ol_dir = os.path.join(repo_board_folder, 'bitstream')
-    dst_ol_dir = os.path.join('x-filter', 'bitstream')
-    copy_tree(src_ol_dir, dst_ol_dir)
-    hw_data_files.extend([os.path.join("..", dst_ol_dir, f) for f in os.listdir(dst_ol_dir)])
+	
+	if os.path.isdir(os.path.join('/usr/local/lib',os.environ['PYNQ_PYTHON'],'dist-packages/pynq/overlays/x-filter')):
+		shutil.rmtree(os.path.join('/usr/local/lib', os.environ['PYNQ_PYTHON'], 'dist-packages/pynq/overlays/x-filter'))
+	shutil.copytree(src_ol_dir, os.path.join('/usr/local/lib', os.environ['PYNQ_PYTHON'], 'dist-packages/pynq/overlays/x-filter')) #copy overlay
+#    dst_ol_dir = os.path.join('x-filter', 'bitstream')
+#    copy_tree(src_ol_dir, dst_ol_dir)
+#    hw_data_files.extend([os.path.join("..", dst_ol_dir, f) for f in os.listdir(dst_ol_dir)])
 
 
 # copy notebooks to jupyter home
