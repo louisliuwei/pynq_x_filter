@@ -71,7 +71,7 @@ copy_notebooks()
 setup(
     name="pynq-x-filter",
     version='1.0',
-    install_requires=['pynq>=2.3'],
+#    install_requires=['pynq>=2.3'],
     url='https://github.com/louisliuwei/pynq_x_filter.git',
     license='BSD 3-Clause License',
     author="Wei Liu, XUP",
@@ -80,5 +80,5 @@ setup(
     package_data={
         '': hw_data_files,
     },
-    description="PYNQ example designs for DSP curriculum"
+    description="example for DSP curriculum"
 )
